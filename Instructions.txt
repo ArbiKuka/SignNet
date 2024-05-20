@@ -1,0 +1,46 @@
+# SignNet Installation and Usage Guide
+
+Back-End -> Where the training and the testing takes place. All Python code.
+Front-End -> Where the design of the website takes place. All React.js code.
+
+## Prerequisites
+Before installing SignNet, ensure you have the following software installed on your system:
+- Python 3.8 or newer
+- pip (Python package installer)
+- A webcam for real-time gesture recognition
+
+## Installation
+
+### 1. Get the files ready
+All the files are provided on the zip file attached to the submission link. Compress the files and put them in a python environment.
+
+### 2. Install Required Packages
+Make sure to install every required library for the code to run.
+These libraries can be found on the top of each file before you try to run it.
+
+## Configuration
+Ensure your webcam is properly configured and accessible by your operating system for real-time video capture.
+
+## Running SignNet
+
+### Starting the Application
+To start the application, run the following files:
+  Back-End: run app.py
+  Front-End: write "npm start" in the terminal
+
+To make your own personalized model, run these files in order:
+  collect_images.py
+  create_dataset.py
+  train_random_forest.py
+  interface_classifier.py or app.py
+
+To run the Back-End only without the design from the website, run the interface_classifier.py.
+
+### Using the Application
+1. Open a web browser and navigate to `http://localhost:5000`.
+2. Grant the necessary permissions for the application to access your webcam.
+3. Start performing sign language gestures in front of the webcam. The recognized gestures will be displayed in real-time on the web page.
+
+### Common Issues
+- **Webcam Access Denied**: Ensure that your browser has the necessary permissions to access the webcam.
+- **Dependency Errors**: If you encounter errors related to missing packages, check the libraries being used on each file again.
